@@ -12,12 +12,18 @@ def isPrime(n: Int): Boolean = {
 //println((1 to 10).map(x => x.toString + " " + isPrime(x).toString))
 
 // n の素因数を返す
-def soinsu(n: Int): List[Int] = {
+//def soinsu(n: Int): List[Int] = {
+def soinsu(n: Int) = {
   (2 to n).filter(x => isPrime(x)).filter(x => n % x == 0)
+  //(2 to n).filter(x => isPrime(x))
+  //(2 to n)
 }
 // テスト
-println(soinsu(10))
+//println(soinsu(14))
+//println(soinsu(13195))
 
-val m = soinsu(10).max
+val m = soinsu(13195).max
+
+println(m)
 
 
