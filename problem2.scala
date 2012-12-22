@@ -2,8 +2,6 @@
 def isPrime(n: Int): Boolean = {
   if (n == 1) {
     return false
-  } else if (n == 2) {
-    return true
   }
 
   // 2 から n 未満の値ですべて割り切れない場合は true
