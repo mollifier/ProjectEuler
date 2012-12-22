@@ -1,10 +1,9 @@
 
-def soinsu(n: Int): Array[Int] = {
-  //{ 1, 2, 3 }
-  Array(1, 2, 3)
+def soinsu(n: Int): List[Int] = {
+  List(1, 2, 3)
 }
 
-val m = soinsu(10).sum
+val m = soinsu(10).max
 
 println(m)
 
